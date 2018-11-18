@@ -1,5 +1,3 @@
-
-
 # 内容结构
 
 1. **[功能描述]**：分布式或者单机爬取全国历史天气2011-未来历史天气
@@ -33,8 +31,8 @@ tianqi
 
 ```
 
-## **[使用教程]**
-###1、安装环境依赖
+##  **[使用教程]**
+### 1、安装环境依赖
     `pip install -r requirements.txt`
 ###  2、项目配置数据库
     `tianqi/tianqi/settings.py`
@@ -45,10 +43,10 @@ tianqi
 ###    5、redis推start_url
     `lpush tq:start_urls  http://tianqi.2345.com/js/citySelectData.js`
 
-##后台运行
+## 后台运行
  `nohup python -u run.py > run.log 2>&1 &`
  
-##docker运行
+## docker运行
 ### 1、构建镜像
 `docker build -t username/tianqi:latest .`
 ### 2、运行镜像
